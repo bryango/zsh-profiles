@@ -7,3 +7,6 @@
 [submodule "themes/bullet-train.zsh"]
 	path = themes/bullet-train.zsh
 	url = https://github.com/caiogondim/bullet-train.zsh.git
+[submodule "plugins/you-should-use"]
+	path = plugins/you-should-use
+	url = https://github.com/MichaelAquilina/zsh-you-should-use.git
