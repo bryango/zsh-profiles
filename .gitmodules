@@ -13,3 +13,6 @@
 [submodule "plugins/zsh-completions"]
 	path = plugins/zsh-completions
 	url = https://github.com/zsh-users/zsh-completions.git
+[submodule "plugins/conda-zsh-completion"]
+	path = plugins/conda-zsh-completion
+	url = https://github.com/esc/conda-zsh-completion.git
