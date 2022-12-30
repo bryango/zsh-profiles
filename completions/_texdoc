@@ -31,7 +31,9 @@ _arguments -C -A "-*" \
   '(- *)--just-view[just display the given file]: :_files' \
   '*: :->package' && return 0
 
-local tlpdb="$(kpsewhich -var-value TEXMFROOT)/tlpkg/texlive.tlpdb"
+# local tlpdb="$(kpsewhich -var-value TEXMFROOT)/tlpkg/texlive.tlpdb"
+# local tlpdb="$HOME/apps/texlive/latest/tlpkg/texlive.tlpdb"
+local tlpdb="$(env-tl kpsewhich -var-value TEXMFROOT 2>/dev/null)/tlpkg/texlive.tlpdb"
 case $state in
   category)
     _values 'category' \
