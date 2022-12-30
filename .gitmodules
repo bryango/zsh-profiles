@@ -16,3 +16,6 @@
 [submodule "plugins/conda-zsh-completion"]
 	path = plugins/conda-zsh-completion
 	url = https://github.com/esc/conda-zsh-completion.git
+[submodule "plugins/nix-zsh-completions"]
+	path = plugins/nix-zsh-completions
+	url = https://github.com/spwhitt/nix-zsh-completions.git
