@@ -19,3 +19,9 @@
 [submodule "plugins/nix-zsh-completions"]
 	path = plugins/nix-zsh-completions
 	url = git@github.com:bryango/nix-zsh-completions.git
+[submodule "themes/powerlevel10k"]
+	path = themes/powerlevel10k
+	url = git@github.com:romkatv/powerlevel10k.git
+[submodule "plugins/jq"]
+	path = plugins/jq
+	url = git@github.com:reegnz/jq-zsh-plugin.git
