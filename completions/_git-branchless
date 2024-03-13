@@ -49,7 +49,11 @@ _git-branchless-move() {
 		"*"{-x,--exact=}"[A set of specific commits to move]:base:__git_recent_commits" \
 		{-d,--dest=}"[The destination commit to move all source commits onto]:base:__git_recent_commits" \
 		{-m,--merge}"[Attempt to resolve merge conflicts, if any]" \
-		{-I,--insert}"[Insert the subtree between the destination and it's children, if any]"
+		{-I,--insert}"[Insert the subtree between the destination and it's children, if any]" \
+		{-F,--fixup}"[Combine the moved commits and squash them into the destination commit]" \
+		{-f,--force-rewrite}"[Force moving public commits, even though other people may have access to those commits]" \
+		--on-disk"[Skip in-memory rebase and try an on-disk rebase directly]" \
+		--in-memory"[Only attempt an in-memory rebase even if it fails]"
 	return 0
 }
 
