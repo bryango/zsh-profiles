@@ -98,7 +98,10 @@ _git-branchless-record() {
 		"${common_options[@]}" \
 		{-m,--message=}"[The commit message to use]:message" \
 		{-i,--interactive}"[Select changes to include interactively, rather than using the current staged/unstaged changes]" \
+		{-c,--create}"[Create and switch to a new branch with the given name before committing]:branch name" \
 		{-d,--detach}"[Detach the current branch before committing]" \
+		{-I,--insert}"[Insert the new commit between the current commit and its children, if any]" \
+		{-s,--stash}"[After making the new commit, switch back to the previous commit]" \
 		"::revsets:__git_commit_ranges"
 	return 0
 }
@@ -149,6 +152,7 @@ _git-branchless-switch() {
 		{-c,--create}"[When checking out the target commit, also create a branch with the provided name pointing to that commit]:branch name" \
 		{-f,--force}"[Forcibly switch commits, discarding any working copy changes if necessary]" \
 		{-m,--merge}"[If the current working copy changes do not apply cleanly to the target commit, start merge conflict resolution instead of aborting]" \
+		{-d,--detach}"[If the target is a branch, switch to that branch and immediately detach from it]" \
 		"::target:__git_commits_prefer_recent"
 	return 0
 }
